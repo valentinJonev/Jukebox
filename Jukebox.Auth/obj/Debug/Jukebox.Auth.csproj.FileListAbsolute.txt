@@ -1,0 +1,2 @@
+C:\Projects\School\Jukebox\Jukebox.Auth\obj\Debug\Jukebox.Auth.csproj.App.config
+C:\Projects\School\Jukebox\Jukebox.Auth\obj\Debug\Jukebox.Auth.csprojResolveAssemblyReference.cache

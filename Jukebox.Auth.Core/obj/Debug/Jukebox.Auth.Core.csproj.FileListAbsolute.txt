@@ -1,0 +1,14 @@
+C:\Projects\School\Jukebox\Jukebox.Auth.Core\bin\Debug\Jukebox.Auth.Core.dll.config
+C:\Projects\School\Jukebox\Jukebox.Auth.Core\bin\Debug\Jukebox.Auth.Core.dll
+C:\Projects\School\Jukebox\Jukebox.Auth.Core\bin\Debug\Jukebox.Auth.Core.pdb
+C:\Projects\School\Jukebox\Jukebox.Auth.Core\bin\Debug\EntityFramework.dll
+C:\Projects\School\Jukebox\Jukebox.Auth.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projects\School\Jukebox\Jukebox.Auth.Core\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Projects\School\Jukebox\Jukebox.Auth.Core\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Projects\School\Jukebox\Jukebox.Auth.Core\bin\Debug\EntityFramework.xml
+C:\Projects\School\Jukebox\Jukebox.Auth.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projects\School\Jukebox\Jukebox.Auth.Core\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Projects\School\Jukebox\Jukebox.Auth.Core\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Projects\School\Jukebox\Jukebox.Auth.Core\obj\Debug\Jukebox.Auth.Core.csprojResolveAssemblyReference.cache
+C:\Projects\School\Jukebox\Jukebox.Auth.Core\obj\Debug\Jukebox.Auth.Core.dll
+C:\Projects\School\Jukebox\Jukebox.Auth.Core\obj\Debug\Jukebox.Auth.Core.pdb
