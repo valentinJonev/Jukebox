@@ -39,7 +39,7 @@ gulp.task('configure', function () {
     return gulp.src('wwwroot/index.html')
         .pipe(gulpif(buildConfig() !== 'Debug',
             htmlreplace({
-                'baseHref': '<base href="/Jukebox/">'
+                'baseHref': '<base href="/JukeboxPlayer/">'
             }, { keepBlockTags: true }),
             htmlreplace({
                 'baseHref': '<base href="/">'
@@ -57,12 +57,12 @@ gulp.task('build', ['clean', 'configure'], function () {
         }))
         .pipe(concat('app.min.js'))
         .pipe(gulpif(buildConfig() !== 'Debug', uglify()))
-        .pipe(sourcemaps.write('.'))
+        .pipe(gulpif(buildConfig() !== 'Release', sourcemaps.write('.')))
         .pipe(gulp.dest('wwwroot/scripts/app/'))
 });
 
 gulp.task('pre-publish', function () {
-    return gulp.src('C:/inetpub/wwwroot/Jukebox/*', { read: false })
+    return gulp.src('C:/inetpub/wwwroot/JukeboxPlayer/*', { read: false })
                .pipe(rimraf({ force: true }));
 });
 

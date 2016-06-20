@@ -1,0 +1,13 @@
+﻿{
+  "Debug": {
+    "jukeboxServiceUrls": {
+      "authenticationServiceUrl": "http://localhost:3471"
+    }
+
+  },
+  "Release": {
+    "jukeboxServiceUrls": {
+      "authenticationServiceUrl": "http://localhost:3471"
+    }
+  }
+}

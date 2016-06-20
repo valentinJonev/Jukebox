@@ -40,12 +40,14 @@ namespace Jukebox.Auth
 
         public void PlaySong(string jukeboxId, int songId)
         {
-#warning TODO: Implement
+            UserConnection player = manager.GetConnection(jukeboxId);
+            Clients.Clients(player.ConnectionIds.ToList()).handlePlay(songId);
         }
 
         public void PauseSong(string jukeboxId)
         {
-#warning TODO: Implement
+            UserConnection player = manager.GetConnection(jukeboxId);
+            Clients.Clients(player.ConnectionIds.ToList()).handlePause();
         }
 
         private void SetUsersList(string connectionId)
