@@ -4,10 +4,13 @@
    contain the root `toctree` directive.
 
 
-Welcome to Jukebox's documentation!
+Добре дошли в документацията на JukeBox
 =================================
 
-Jukebox is an online jukebox player based on AngularJS, TypeScript, SignalR and ASP.NET WebAPI. This documentation explayns why and how the player was created and how to run the code. You can jump to the sections below if you want to find out something in particular or just read it all. There will be pieces of code in this documentation, but keep in mind that if you want to understand the application better, you should download the source code and read it along with the documentation.
+Някога случвало ли ви се е да искате да смените песента, но не ви се става от дивана? Четете и не искате да станете? Тогава нашия интерактивен JukeBox е точно за вас. Можете да сменяте песните както от телефон и таблет, така и от компютър. Интернет приложението позволява лесна смяна на песните, контрол на звука и всяка друга опция, която ви трябва и може да го имате от всякакво устройство.
+
+Единственото нещо, което трябва да направите е да свържете компютъра или телефона с уеб приложението и можете да се насладите на музика по свой избор. В тази документация ви представяме сегашната разработка на проекта, но и бъдещите планове за него.
+
 
 .. toctree::
    :maxdepth: 2
