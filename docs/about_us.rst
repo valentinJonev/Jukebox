@@ -3,7 +3,7 @@ About us
 
 Who are you?
 ------------
-We are two computer science students from Bulgaria. We are currently 11-th grade and we are looking into gainig more experience. We are `Martin Dimitrov`_ and `Valentin Yonev`_ . Martin is responsible for the *awful* design of the application and I am responsible for the *buggy* code behind it. 
+We are three computer science students from Bulgaria. We are currently 11-th grade and we are looking into gainig more experience. We are `Martin Dimitrov`_,`Vanessa Stoynova`_ and `Valentin Yonev`_ . 
 
 What do you do for fun?
 -----------------------
@@ -11,9 +11,11 @@ Outside of our school and job lives we like to listen to *lots* of music, watch 
 
 How to contact you?
 -------------------
-Well, you can contact us by writing us an email (`Martin's email`_ , `my email`_) or by messaging us on Facebook. We will be very happy to answer your questions so you can write us about everything. Even for a beer if you are close enough to us. :) 
+Well, you can contact us by writing us an email (`Martin's email`_ ,`Vanessa's email`_, `Valentin's email`_) or by messaging us on Facebook. We will be very happy to answer your questions so you can write us about everything. Even for a beer if you are close enough to us. :) 
 
 .. _Martin Dimitrov: https://www.facebook.com/martin.dimitrov.714
 .. _Valentin Yonev: https://www.facebook.com/oklav
+.. _Vanessa Stoynova: https://www.facebook.com/vanessa.stoynova
 .. _Martin's email: mailto:marto.dimitrov@gmail.com
-.. _my email: mailto:valentin.ionev@live.com
+.. _Valentin's email: mailto:valentin.ionev@live.com
+.. _Vanessa's email: mailto:vanesa.nessi98@gmail.com
