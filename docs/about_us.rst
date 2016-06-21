@@ -1,17 +1,17 @@
-About us
+За нас
 ========
 
-Who are you?
+Кои сме ние?
 ------------
-We are three computer science students from Bulgaria. We are currently 11-th grade and we are looking into gainig more experience. We are `Martin Dimitrov`_,`Vanessa Stoynova`_ and `Valentin Yonev`_ . 
+Ние сме трима ученици по специалността Системнно програмиране. Ние сме 11 клас и търсим начини да добием повече опит. Ние сме `Martin Dimitrov`_,`Vanessa Stoynova`_ and `Valentin Yonev`_ . 
 
-What do you do for fun?
+Какво правим през свободното си време?
 -----------------------
-Outside of our school and job lives we like to listen to *lots* of music, watch movies, go to cafes, *bla bla bla*. But we also enjoy hiking, skiing, riding bikes and playing games. We both like extreme sports like paragliding and canoe kayak.
+Извън училището и работата слушаме много музика, гледаме филми, ходим на кафета. Също така обичаме катерене, ски, каране на колела и игране на игри. 
 
-How to contact you?
+Как да се свържете с нас?
 -------------------
-Well, you can contact us by writing us an email (`Martin's email`_ ,`Vanessa's email`_, `Valentin's email`_) or by messaging us on Facebook. We will be very happy to answer your questions so you can write us about everything. Even for a beer if you are close enough to us. :) 
+Можете да ни пишете по мейл (`Martin's email`_ ,`Vanessa's email`_, `Valentin's email`_) или във Facebook. Ще се радваме да отговорим на всеки ваш въпрос :) 
 
 .. _Martin Dimitrov: https://www.facebook.com/martin.dimitrov.714
 .. _Valentin Yonev: https://www.facebook.com/oklav
