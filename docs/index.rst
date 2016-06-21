@@ -14,24 +14,25 @@
 
 .. toctree::
    :maxdepth: 2
-   :caption: Developer documentation
+   :caption: Researches
    
-   getting_started
-   front-end
-   back-end
-   database
-   mobile
+   market_research
    
 .. toctree::
    :maxdepth: 2
-   :caption: User documentation
+   :caption: Software
    
-   user_guide
+   code
+   
+.. toctree::
+   :maxdepth: 2
+   :caption: Hardware
+   
+   schematics
    
 .. toctree::
    :maxdepth: 2
    :caption: FAQ
    
-   about_the_project
    about_us
 
