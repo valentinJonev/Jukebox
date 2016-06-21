@@ -1,14 +1,13 @@
 /// <reference path="../_all.ts" />
 var Jukebox;
 (function (Jukebox) {
-    var Player;
-    (function (Player) {
+    var Client;
+    (function (Client) {
         var Controllers;
         (function (Controllers) {
             'use strict';
             var HomeController = (function () {
                 function HomeController($rootScope, $scope, $http, $state, jukeboxWebPaths, jukeboxServiceUrls, Hub, $uibModal, hubService, authService) {
-                    var _this = this;
                     this.$rootScope = $rootScope;
                     this.$scope = $scope;
                     this.$http = $http;
@@ -19,37 +18,39 @@ var Jukebox;
                     this.$uibModal = $uibModal;
                     this.hubService = hubService;
                     this.authService = authService;
-                    this.handlePlay = function (audio_url) {
-                        _this.audio = new Audio(audio_url);
-                        _this.audio.play();
-                    };
-                    this.handlePause = function (secondPlayer) {
-                        _this.audio.pause();
-                    };
                     $scope.controller = this;
-                    this.account.userName = "raspberry";
-                    this.account.password = "raspberry";
-                    authService.login(this.account);
                     this.createUsersHub();
+                    this.getSongs();
                 }
                 HomeController.prototype.createUsersHub = function () {
                     var _this = this;
                     this.usersHub = this.hubService.startHub("UsersListHub", {
                         rootPath: this.jukeboxServiceUrls.authenticationServiceUrl + "/signalr",
                         logging: false,
-                        listeners: {
-                            'handlePlay': this.handlePlay,
-                            'handlePause': this.handlePause
-                        }
+                        methods: ['PlaySong', 'PauseSong']
                     });
                     this.$scope.$on('$stateChangeStart', function () {
                         _this.usersHub.disconnect();
                     });
                 };
-                HomeController.$inject = ['$rootScope', '$scope', '$http', '$state', 'jukeboxWebPaths', 'jukeboxServiceUrls', 'jukeboxViewPaths', 'Hub', '$uibModal', 'hubService', 'authService'];
+                HomeController.prototype.getSongs = function () {
+                    var _this = this;
+                    this.$http.get(this.jukeboxServiceUrls.backendServiceUrl + "/api/music/list")
+                        .then(function (result) {
+                        _this.songs = result.data;
+                    });
+                };
+                HomeController.prototype.playSong = function (songUrl) {
+                    var raspberryId = '23b77463-5c5b-4cd8-90dc-b3a0edf9fa2f';
+                    this.usersHub.invoke('PlaySong', raspberryId, songUrl);
+                };
+                HomeController.prototype.pause = function () {
+                    this.usersHub.invoke('PauseSong');
+                };
+                HomeController.$inject = ['$rootScope', '$scope', '$http', '$state', 'jukeboxWebPaths', 'jukeboxServiceUrls', 'Hub', '$uibModal', 'hubService', 'authService'];
                 return HomeController;
             })();
             Controllers.HomeController = HomeController;
-        })(Controllers = Player.Controllers || (Player.Controllers = {}));
-    })(Player = Jukebox.Player || (Jukebox.Player = {}));
+        })(Controllers = Client.Controllers || (Client.Controllers = {}));
+    })(Client = Jukebox.Client || (Jukebox.Client = {}));
 })(Jukebox || (Jukebox = {}));

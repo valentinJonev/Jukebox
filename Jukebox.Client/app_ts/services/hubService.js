@@ -1,8 +1,8 @@
 /// <reference path="../_all.ts" />
 var Jukebox;
 (function (Jukebox) {
-    var Player;
-    (function (Player) {
+    var Client;
+    (function (Client) {
         var Services;
         (function (Services) {
             'use strict';
@@ -42,12 +42,12 @@ var Jukebox;
                         .fail(this.onHubConnectFail);
                 };
                 HubService.prototype.redirectToLogin = function () {
-                    //this.$state.go(this.jukeboxWebPaths.accountLogin.state);
+                    this.$state.go(this.jukeboxWebPaths.accountLogin.state);
                 };
                 HubService.$inject = ['$state', 'jukeboxWebPaths', 'authService', 'Hub'];
                 return HubService;
             })();
             Services.HubService = HubService;
-        })(Services = Player.Services || (Player.Services = {}));
-    })(Player = Jukebox.Player || (Jukebox.Player = {}));
+        })(Services = Client.Services || (Client.Services = {}));
+    })(Client = Jukebox.Client || (Jukebox.Client = {}));
 })(Jukebox || (Jukebox = {}));

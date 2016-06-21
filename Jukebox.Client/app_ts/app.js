@@ -1,14 +1,14 @@
 /// <reference path="_all.ts" />
 var Jukebox;
 (function (Jukebox) {
-    var Player;
-    (function (Player) {
+    var Client;
+    (function (Client) {
         'use strict';
-        var Configurations = Jukebox.Player.Configurations;
-        var Constants = Jukebox.Player.Constants;
-        var Controllers = Jukebox.Player.Controllers;
-        var Filters = Jukebox.Player.Filters;
-        var Services = Jukebox.Player.Services;
+        var Configurations = Jukebox.Client.Configurations;
+        var Constants = Jukebox.Client.Constants;
+        var Controllers = Jukebox.Client.Controllers;
+        var Filters = Jukebox.Client.Filters;
+        var Services = Jukebox.Client.Services;
         var app = angular.module('jukebox-web', ['ui.router', 'LocalStorageModule', 'angular-loading-bar', 'jukebox-web-service-url', 'ui.bootstrap', 'ng-file-model', 'SignalR'])
             .constant('jukeboxWebPaths', new Constants.JukeboxWebPaths())
             .constant('jukeboxViewPaths', new Constants.JukeboxViewPaths())
@@ -16,6 +16,8 @@ var Jukebox;
             .filter('stringFormat', Filters.stringFormat)
             .service('authService', Services.AuthService)
             .service('hubService', Services.HubService)
+            .controller("loginController", Controllers.Account.LoginController)
+            .controller("account.registerController", Controllers.Account.RegisterController)
             .controller("homeController", Controllers.HomeController)
             .controller("indexController", Controllers.IndexController)
             .config(['cfpLoadingBarProvider', Configurations.configureLoadingBar])
@@ -26,7 +28,7 @@ var Jukebox;
             return initialize($rootScope, $state, $uibModal, authService, jukeboxServiceUrls, jukeboxWebPaths, jukeboxViewPaths);
         });
         function initialize($rootScope, $state, $uibModal, authService, jukeboxServiceUrls, jukeboxWebPaths, jukeboxViewPaths) {
-            $rootScope.controller = new Player.RootController($rootScope, $state, $uibModal, authService, jukeboxServiceUrls, jukeboxWebPaths, jukeboxViewPaths);
+            $rootScope.controller = new Client.RootController($rootScope, $state, $uibModal, authService, jukeboxServiceUrls, jukeboxWebPaths, jukeboxViewPaths);
         }
-    })(Player = Jukebox.Player || (Jukebox.Player = {}));
+    })(Client = Jukebox.Client || (Jukebox.Client = {}));
 })(Jukebox || (Jukebox = {}));

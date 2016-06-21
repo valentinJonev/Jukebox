@@ -1,6 +1,6 @@
 ﻿/// <reference path="../_all.ts" />
 
-module Jukebox.Player.Services {
+module Jukebox.Client.Services {
     'use strict';
 
     export interface IHubService {
@@ -54,7 +54,7 @@ module Jukebox.Player.Services {
         }
 
         private redirectToLogin() {
-            //this.$state.go(this.jukeboxWebPaths.accountLogin.state);
+            this.$state.go(this.jukeboxWebPaths.accountLogin.state);
         }
     }
 }

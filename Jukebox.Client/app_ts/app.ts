@@ -1,13 +1,13 @@
 ﻿/// <reference path="_all.ts" />
 
-module Jukebox.Player {
+module Jukebox.Client {
     'use strict';
 
-    import Configurations = Jukebox.Player.Configurations;
-    import Constants = Jukebox.Player.Constants;
-    import Controllers = Jukebox.Player.Controllers;
-    import Filters = Jukebox.Player.Filters;
-    import Services = Jukebox.Player.Services;
+    import Configurations = Jukebox.Client.Configurations;
+    import Constants = Jukebox.Client.Constants;
+    import Controllers = Jukebox.Client.Controllers;
+    import Filters = Jukebox.Client.Filters;
+    import Services = Jukebox.Client.Services;
 
     var app: angular.IModule = angular.module('jukebox-web',
         ['ui.router', 'LocalStorageModule', 'angular-loading-bar', 'jukebox-web-service-url', 'ui.bootstrap', 'ng-file-model', 'SignalR'])
@@ -21,6 +21,8 @@ module Jukebox.Player {
         .service('authService', Services.AuthService)
         .service('hubService', Services.HubService)
         //controllers
+        .controller("loginController", Controllers.Account.LoginController)
+        .controller("account.registerController", Controllers.Account.RegisterController)
         .controller("homeController", Controllers.HomeController)
         .controller("indexController", Controllers.IndexController)
         //configuration

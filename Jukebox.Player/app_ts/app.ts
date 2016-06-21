@@ -23,6 +23,7 @@ module Jukebox.Player {
         //controllers
         .controller("homeController", Controllers.HomeController)
         .controller("indexController", Controllers.IndexController)
+        .controller("loginController", Controllers.Account.LoginController)
         //configuration
         .config(['cfpLoadingBarProvider', Configurations.configureLoadingBar])
         .config(['$httpProvider', Configurations.confugreInterceptoprs])

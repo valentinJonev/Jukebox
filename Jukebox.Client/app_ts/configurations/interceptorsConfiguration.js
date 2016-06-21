@@ -1,15 +1,15 @@
 /// <reference path="../_all.ts" />
 var Jukebox;
 (function (Jukebox) {
-    var Player;
-    (function (Player) {
+    var Client;
+    (function (Client) {
         var Configurations;
         (function (Configurations) {
             'use strict';
             function confugreInterceptoprs($httpProvider) {
-                $httpProvider.interceptors.push(Player.Services.AuthInterceptorService.Factory);
+                $httpProvider.interceptors.push(Client.Services.AuthInterceptorService.Factory);
             }
             Configurations.confugreInterceptoprs = confugreInterceptoprs;
-        })(Configurations = Player.Configurations || (Player.Configurations = {}));
-    })(Player = Jukebox.Player || (Jukebox.Player = {}));
+        })(Configurations = Client.Configurations || (Client.Configurations = {}));
+    })(Client = Jukebox.Client || (Jukebox.Client = {}));
 })(Jukebox || (Jukebox = {}));

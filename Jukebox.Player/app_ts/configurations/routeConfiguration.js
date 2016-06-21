@@ -12,19 +12,11 @@ var Jukebox;
                     controller: "homeController",
                     templateUrl: jukeboxViewPaths.home
                 });
-                /*
                 $stateProvider.state(jukeboxWebPaths.accountLogin.state, {
                     url: jukeboxWebPaths.accountLogin.url,
                     controller: "loginController",
                     templateUrl: jukeboxViewPaths.accountLogin
                 });
-        
-                $stateProvider.state(jukeboxWebPaths.accountRegister.state, {
-                    url: jukeboxWebPaths.accountRegister.url,
-                    controller: "account.registerController",
-                    templateUrl: jukeboxViewPaths.accountRegister
-                });
-                */
                 $urlRouterProvider.otherwise(jukeboxWebPaths.home.url);
                 // use the HTML5 History API
                 $locationProvider.html5Mode({

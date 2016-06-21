@@ -1,6 +1,6 @@
 ﻿/// <reference path="../_all.ts" />
 
-module Jukebox.Player.Configurations {
+module Jukebox.Client.Configurations {
     'use strict';
 
 
@@ -16,8 +16,7 @@ module Jukebox.Player.Configurations {
             controller: "homeController",
             templateUrl: jukeboxViewPaths.home
         });
-
-        /*
+        
         $stateProvider.state(jukeboxWebPaths.accountLogin.state, {
             url: jukeboxWebPaths.accountLogin.url,
             controller: "loginController",
@@ -29,7 +28,6 @@ module Jukebox.Player.Configurations {
             controller: "account.registerController",
             templateUrl: jukeboxViewPaths.accountRegister
         });
-        */
 
         $urlRouterProvider.otherwise(jukeboxWebPaths.home.url);
 

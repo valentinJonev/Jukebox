@@ -1,4 +1,4 @@
-﻿module Jukebox.Player.Models.Account {
+﻿module Jukebox.Client.Models.Account {
     'use strict';
 
     export class LoginData {

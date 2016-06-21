@@ -1,6 +1,6 @@
 ﻿/// <reference path="../_all.ts" />
 
-module Jukebox.Player.Services {
+module Jukebox.Client.Services {
     'use strict';
 
     export class AuthInterceptorService implements angular.IHttpInterceptor {

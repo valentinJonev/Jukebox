@@ -1,6 +1,7 @@
-﻿declare module Jukebox.Player.Constants {
+﻿declare module Jukebox.Client.Constants {
 
     export interface JukeboxServiceUrls {
         authenticationServiceUrl: string;
+        backendServiceUrl: string;
     }
 }

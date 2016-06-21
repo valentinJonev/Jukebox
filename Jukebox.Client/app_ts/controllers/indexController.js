@@ -1,8 +1,8 @@
 /// <reference path="../_all.ts" />
 var Jukebox;
 (function (Jukebox) {
-    var Player;
-    (function (Player) {
+    var Client;
+    (function (Client) {
         var Controllers;
         (function (Controllers) {
             'use strict';
@@ -23,6 +23,6 @@ var Jukebox;
                 return IndexController;
             })();
             Controllers.IndexController = IndexController;
-        })(Controllers = Player.Controllers || (Player.Controllers = {}));
-    })(Player = Jukebox.Player || (Jukebox.Player = {}));
+        })(Controllers = Client.Controllers || (Client.Controllers = {}));
+    })(Client = Jukebox.Client || (Jukebox.Client = {}));
 })(Jukebox || (Jukebox = {}));

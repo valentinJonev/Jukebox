@@ -5,7 +5,7 @@ using Jukebox.WebApi.Attributes;
 
 namespace Jukebox.WebApi.Common
 {
-    [SNAuthorize]
+    //[SNAuthorize]
     public class BaseApiController : ApiController
     {
         protected IHttpActionResult Created()

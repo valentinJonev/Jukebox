@@ -1,6 +1,6 @@
 ﻿/// <reference path="../_all.ts" />
 
-module Jukebox.Player.Controllers {
+module Jukebox.Client.Controllers {
     'use strict';
 
     export interface IIndexScope extends angular.IScope {

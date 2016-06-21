@@ -1,7 +1,7 @@
 var Jukebox;
 (function (Jukebox) {
-    var Player;
-    (function (Player) {
+    var Client;
+    (function (Client) {
         var Filters;
         (function (Filters) {
             'use strict';
@@ -16,6 +16,6 @@ var Jukebox;
             }
             Filters.stringFormat = stringFormat;
             ;
-        })(Filters = Player.Filters || (Player.Filters = {}));
-    })(Player = Jukebox.Player || (Jukebox.Player = {}));
+        })(Filters = Client.Filters || (Client.Filters = {}));
+    })(Client = Jukebox.Client || (Jukebox.Client = {}));
 })(Jukebox || (Jukebox = {}));

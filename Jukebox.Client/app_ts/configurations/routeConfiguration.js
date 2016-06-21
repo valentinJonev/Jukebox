@@ -1,8 +1,8 @@
 /// <reference path="../_all.ts" />
 var Jukebox;
 (function (Jukebox) {
-    var Player;
-    (function (Player) {
+    var Client;
+    (function (Client) {
         var Configurations;
         (function (Configurations) {
             'use strict';
@@ -12,19 +12,16 @@ var Jukebox;
                     controller: "homeController",
                     templateUrl: jukeboxViewPaths.home
                 });
-                /*
                 $stateProvider.state(jukeboxWebPaths.accountLogin.state, {
                     url: jukeboxWebPaths.accountLogin.url,
                     controller: "loginController",
                     templateUrl: jukeboxViewPaths.accountLogin
                 });
-        
                 $stateProvider.state(jukeboxWebPaths.accountRegister.state, {
                     url: jukeboxWebPaths.accountRegister.url,
                     controller: "account.registerController",
                     templateUrl: jukeboxViewPaths.accountRegister
                 });
-                */
                 $urlRouterProvider.otherwise(jukeboxWebPaths.home.url);
                 // use the HTML5 History API
                 $locationProvider.html5Mode({
@@ -33,6 +30,6 @@ var Jukebox;
                 });
             }
             Configurations.configureRouting = configureRouting;
-        })(Configurations = Player.Configurations || (Player.Configurations = {}));
-    })(Player = Jukebox.Player || (Jukebox.Player = {}));
+        })(Configurations = Client.Configurations || (Client.Configurations = {}));
+    })(Client = Jukebox.Client || (Jukebox.Client = {}));
 })(Jukebox || (Jukebox = {}));

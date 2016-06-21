@@ -5,8 +5,8 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var Jukebox;
 (function (Jukebox) {
-    var Player;
-    (function (Player) {
+    var Client;
+    (function (Client) {
         var Models;
         (function (Models) {
             var Error;
@@ -38,6 +38,6 @@ var Jukebox;
                     return BadRequest;
                 })();
             })(Error = Models.Error || (Models.Error = {}));
-        })(Models = Player.Models || (Player.Models = {}));
-    })(Player = Jukebox.Player || (Jukebox.Player = {}));
+        })(Models = Client.Models || (Client.Models = {}));
+    })(Client = Jukebox.Client || (Jukebox.Client = {}));
 })(Jukebox || (Jukebox = {}));

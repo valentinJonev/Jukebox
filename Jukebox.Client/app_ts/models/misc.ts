@@ -1,4 +1,4 @@
-﻿module Jukebox.Player.Models.Misc {
+﻿module Jukebox.Client.Models.Misc {
     'use strict';
 
     export class ErrorModel {

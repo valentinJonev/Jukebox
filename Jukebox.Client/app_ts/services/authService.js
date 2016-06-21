@@ -1,8 +1,8 @@
 /// <reference path="../_all.ts" />
 var Jukebox;
 (function (Jukebox) {
-    var Player;
-    (function (Player) {
+    var Client;
+    (function (Client) {
         var Services;
         (function (Services) {
             'use strict';
@@ -27,7 +27,7 @@ var Jukebox;
                         return null;
                     };
                     this.authorizationData = new AuthorizationData(localStorageService);
-                    this.authentication = new Player.Models.Account.Authentication();
+                    this.authentication = new Client.Models.Account.Authentication();
                 }
                 AuthService.prototype.login = function (loginData) {
                     this.loginData = loginData;
@@ -74,6 +74,6 @@ var Jukebox;
                 AuthorizationData.AUTH_DATA_KEY = 'authorizationData';
                 return AuthorizationData;
             })();
-        })(Services = Player.Services || (Player.Services = {}));
-    })(Player = Jukebox.Player || (Jukebox.Player = {}));
+        })(Services = Client.Services || (Client.Services = {}));
+    })(Client = Jukebox.Client || (Jukebox.Client = {}));
 })(Jukebox || (Jukebox = {}));

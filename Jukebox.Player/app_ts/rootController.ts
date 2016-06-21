@@ -11,8 +11,8 @@ module Jukebox.Player {
         showLogout: boolean;
 
         logOut();
-        // errorMessage(message: string, time: number);
-        // errorMessage(message: string, time: number, errorList: string[]);
+        errorMessage(message: string, time: number);
+        errorMessage(message: string, time: number, errorList: string[]);
         hasRemoteTokenRequestFailed(rejection: angular.IHttpPromiseCallbackArg<{}>): boolean;
         isPasswordSending(rejection: angular.IHttpPromiseCallbackArg<{}>): boolean;
     }
@@ -40,7 +40,7 @@ module Jukebox.Player {
             // this.redirectToLogin();
         }
 
-        /*public errorMessage(message: string, time: number, errorList: string[] = null) {
+        public errorMessage(message: string, time: number, errorList: string[] = null) {
             var modalInstance = this.$uibModal.open({
                 animation: true,
                 templateUrl: this.jukeboxViewPaths.error,
@@ -58,26 +58,26 @@ module Jukebox.Player {
                     }
                 }
             });
-        }*/
+        }
         
         public hasRemoteTokenRequestFailed(rejection: angular.IHttpPromiseCallbackArg<{}>): boolean {
             return rejection.status === 400
-                && rejection.config.url == this.jukeboxServiceUrls.authenticationServiceUrl;
-               // && this.$state.current.name != this.shipsWebPaths.accountLogin.state;
+                && rejection.config.url == this.jukeboxServiceUrls.authenticationServiceUrl
+                && this.$state.current.name != this.jukeboxWebPaths.accountLogin.state;
         };
 
         public isPasswordSending(rejection: angular.IHttpPromiseCallbackArg<{}>): boolean {
-            return rejection.config.url == this.jukeboxServiceUrls.authenticationServiceUrl;
-                // && this.$state.current.name == this.shipsWebPaths.accountLogin.state;
+            return rejection.config.url == this.jukeboxServiceUrls.authenticationServiceUrl
+                && this.$state.current.name == this.jukeboxWebPaths.accountLogin.state;
         }
 
-        /*private redirectToLogin() {
-            this.$state.go(this.shipsWebPaths.accountLogin.state);
+        private redirectToLogin() {
+            this.$state.go(this.jukeboxWebPaths.accountLogin.state);
             this.redirectedToLogin = true;
             setTimeout(() => {
                 this.redirectedToLogin = false;
             }, 200);
-        }*/
+        }
 
         private cofigureAuthService() {
             this.authService.fillAuthData();
@@ -89,11 +89,11 @@ module Jukebox.Player {
 
         private onNewUrlState = (e: angular.IAngularEvent, toState: angular.ui.IState, toParams: angular.ui.IStateParams, fromState: angular.ui.IState, fromParams: angular.ui.IStateParams) => {
             if (!this.authService.authentication.isAuth
-                && !this.redirectedToLogin){
-                //&& toState.name != this.shipsWebPaths.accountLogin.state
-                //&& toState.name != this.shipsWebPaths.accountRegister.state) {
+                && !this.redirectedToLogin
+                && toState.name != this.jukeboxWebPaths.accountLogin.state
+                && toState.name != this.jukeboxWebPaths.accountRegister.state) {
                 e.preventDefault();
-                //this.redirectToLogin();
+                this.redirectToLogin();
             }
             else {
                 this.showLogout = true;

@@ -1,4 +1,4 @@
-﻿module Jukebox.Player.Models.Error {
+﻿module Jukebox.Client.Models.Error {
     'use strict';
 
     export class BaseApiError {

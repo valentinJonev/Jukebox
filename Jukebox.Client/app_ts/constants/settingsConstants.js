@@ -1,8 +1,8 @@
 /// <reference path="../_all.ts" />
 var Jukebox;
 (function (Jukebox) {
-    var Player;
-    (function (Player) {
+    var Client;
+    (function (Client) {
         var Constants;
         (function (Constants) {
             'use strict';
@@ -13,6 +13,6 @@ var Jukebox;
                 return JukeboxSettings;
             })();
             Constants.JukeboxSettings = JukeboxSettings;
-        })(Constants = Player.Constants || (Player.Constants = {}));
-    })(Player = Jukebox.Player || (Jukebox.Player = {}));
+        })(Constants = Client.Constants || (Client.Constants = {}));
+    })(Client = Jukebox.Client || (Jukebox.Client = {}));
 })(Jukebox || (Jukebox = {}));

@@ -18,6 +18,7 @@ var Jukebox;
             .service('hubService', Services.HubService)
             .controller("homeController", Controllers.HomeController)
             .controller("indexController", Controllers.IndexController)
+            .controller("loginController", Controllers.Account.LoginController)
             .config(['cfpLoadingBarProvider', Configurations.configureLoadingBar])
             .config(['$httpProvider', Configurations.confugreInterceptoprs])
             .config(['$stateProvider', '$urlRouterProvider', '$locationProvider', 'jukeboxWebPaths', 'jukeboxViewPaths', 'jukeboxServiceUrls', Configurations.configureRouting])

@@ -1,4 +1,4 @@
-﻿module Jukebox.Player.Filters {
+﻿module Jukebox.Client.Filters {
     'use strict';
 
     //TODO: refactor

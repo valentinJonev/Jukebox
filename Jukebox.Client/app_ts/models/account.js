@@ -1,7 +1,7 @@
 var Jukebox;
 (function (Jukebox) {
-    var Player;
-    (function (Player) {
+    var Client;
+    (function (Client) {
         var Models;
         (function (Models) {
             var Account;
@@ -50,6 +50,6 @@ var Jukebox;
                 })();
                 Account.UserGameModel = UserGameModel;
             })(Account = Models.Account || (Models.Account = {}));
-        })(Models = Player.Models || (Player.Models = {}));
-    })(Player = Jukebox.Player || (Jukebox.Player = {}));
+        })(Models = Client.Models || (Client.Models = {}));
+    })(Client = Jukebox.Client || (Jukebox.Client = {}));
 })(Jukebox || (Jukebox = {}));

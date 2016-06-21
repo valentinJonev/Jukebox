@@ -103,3 +103,4 @@ C:\Projects\School\Jukebox\Jukebox.WebApi\bin\Microsoft.Owin.Security.MicrosoftA
 C:\Projects\School\Jukebox\Jukebox.WebApi\bin\System.Web.Http.Owin.xml
 C:\Projects\School\Jukebox\Jukebox.WebApi\obj\Debug\Jukebox.WebApi.dll
 C:\Projects\School\Jukebox\Jukebox.WebApi\obj\Debug\Jukebox.WebApi.pdb
+C:\Projects\School\Jukebox\Jukebox.WebApi\bin\System.Web.Cors.dll

@@ -38,10 +38,10 @@ namespace Jukebox.Auth
             return base.OnDisconnected(stopCalled);
         }
 
-        public void PlaySong(string jukeboxId, int songId)
+        public void PlaySong(string jukeboxId, string songUrl)
         {
             UserConnection player = manager.GetConnection(jukeboxId);
-            Clients.Clients(player.ConnectionIds.ToList()).handlePlay(songId);
+            Clients.Clients(player.ConnectionIds.ToList()).handlePlay(songUrl);
         }
 
         public void PauseSong(string jukeboxId)

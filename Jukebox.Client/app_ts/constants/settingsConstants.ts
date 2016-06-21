@@ -1,6 +1,6 @@
 ﻿/// <reference path="../_all.ts" />
 
-module Jukebox.Player.Constants {
+module Jukebox.Client.Constants {
     'use strict'
 
     export class JukeboxSettings {

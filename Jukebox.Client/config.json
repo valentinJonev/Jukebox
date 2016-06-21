@@ -1,13 +1,15 @@
 ﻿{
   "Debug": {
     "jukeboxServiceUrls": {
-      "authenticationServiceUrl": "http://localhost:3471"
+      "authenticationServiceUrl": "http://localhost:3471",
+      "backendServiceUrl": "http://localhost:9849/"
     }
 
   },
   "Release": {
     "jukeboxServiceUrls": {
-      "authenticationServiceUrl": "http://localhost:3471"
+      "authenticationServiceUrl": "http://localhost:3471",
+      "backendServiceUrl": "http://localhost:9849/"
     }
   }
 }

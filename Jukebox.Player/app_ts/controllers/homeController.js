@@ -27,9 +27,6 @@ var Jukebox;
                         _this.audio.pause();
                     };
                     $scope.controller = this;
-                    this.account.userName = "raspberry";
-                    this.account.password = "raspberry";
-                    authService.login(this.account);
                     this.createUsersHub();
                 }
                 HomeController.prototype.createUsersHub = function () {
@@ -46,7 +43,7 @@ var Jukebox;
                         _this.usersHub.disconnect();
                     });
                 };
-                HomeController.$inject = ['$rootScope', '$scope', '$http', '$state', 'jukeboxWebPaths', 'jukeboxServiceUrls', 'jukeboxViewPaths', 'Hub', '$uibModal', 'hubService', 'authService'];
+                HomeController.$inject = ['$rootScope', '$scope', '$http', '$state', 'jukeboxWebPaths', 'jukeboxServiceUrls', 'Hub', '$uibModal', 'hubService', 'authService'];
                 return HomeController;
             })();
             Controllers.HomeController = HomeController;

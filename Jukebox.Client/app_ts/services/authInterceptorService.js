@@ -1,8 +1,8 @@
 /// <reference path="../_all.ts" />
 var Jukebox;
 (function (Jukebox) {
-    var Player;
-    (function (Player) {
+    var Client;
+    (function (Client) {
         var Services;
         (function (Services) {
             'use strict';
@@ -54,6 +54,6 @@ var Jukebox;
                 return AuthInterceptorService;
             })();
             Services.AuthInterceptorService = AuthInterceptorService;
-        })(Services = Player.Services || (Player.Services = {}));
-    })(Player = Jukebox.Player || (Jukebox.Player = {}));
+        })(Services = Client.Services || (Client.Services = {}));
+    })(Client = Jukebox.Client || (Jukebox.Client = {}));
 })(Jukebox || (Jukebox = {}));

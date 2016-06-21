@@ -1,6 +1,6 @@
 ﻿/// <reference path="../_all.ts" />
 
-module Jukebox.Player.Configurations {
+module Jukebox.Client.Configurations {
     'use strict';
 
     export function confugreInterceptoprs($httpProvider: angular.IHttpProvider) {

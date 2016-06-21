@@ -62,7 +62,7 @@ gulp.task('build', ['clean', 'configure'], function () {
 });
 
 gulp.task('pre-publish', function () {
-    return gulp.src('C:/inetpub/wwwroot/JukeboxPlayer/*', { read: false })
+    return gulp.src('C:/inetpub/wwwroot/JukeboxClient/*', { read: false })
                .pipe(rimraf({ force: true }));
 });
 

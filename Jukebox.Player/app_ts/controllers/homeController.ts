@@ -12,12 +12,10 @@ module Jukebox.Player.Controllers {
     }
 
     export class HomeController implements IHomeController {
-        static $inject = ['$rootScope', '$scope', '$http', '$state', 'jukeboxWebPaths', 'jukeboxServiceUrls', 'jukeboxViewPaths', 'Hub', '$uibModal', 'hubService', 'authService'];
+        static $inject = ['$rootScope', '$scope', '$http', '$state', 'jukeboxWebPaths', 'jukeboxServiceUrls', 'Hub', '$uibModal', 'hubService', 'authService'];
         
         private usersHub: ngSignalr.Hub;
         private audio: HTMLAudioElement;
-
-        private account: Models.Account.LoginData;
 
         constructor(private $rootScope: IRootScope, private $scope: IHomeScope,
             private $http: angular.IHttpService, private $state: angular.ui.IStateService,
@@ -25,11 +23,6 @@ module Jukebox.Player.Controllers {
             private Hub: ngSignalr.HubFactory, private $uibModal: angular.ui.bootstrap.IModalService,
             private hubService: Services.HubService, private authService: Services.IAuthService) {
             $scope.controller = this;
-
-            this.account.userName = "raspberry";
-            this.account.password = "raspberry";
-
-            authService.login(this.account);
 
             this.createUsersHub();
         }

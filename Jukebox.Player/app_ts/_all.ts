@@ -22,6 +22,7 @@
 
 /// <reference path="controllers/indexController.ts" />
 /// <reference path="controllers/homeController.ts" />
+/// <reference path="controllers/account/loginController.ts" />
 
 /// <reference path="filters/stringFormat.ts" />
 
