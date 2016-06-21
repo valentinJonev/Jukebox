@@ -3,7 +3,7 @@
 
 Кои сме ние?
 ------------
-Ние сме трима ученици по специалността Системнно програмиране. Ние сме 11 клас и търсим начини да добием повече опит. Ние сме `Martin Dimitrov`_,`Vanessa Stoynova`_ and `Valentin Yonev`_ . 
+Ние сме трима ученици по специалността Системнно програмиране. Ние сме 11 клас и търсим начини да добием повече опит. Ние сме `Martin Dimitrov`_, `Vanessa Stoynova`_ and `Valentin Yonev`_ . 
 
 Какво правим през свободното си време?
 -----------------------
@@ -11,7 +11,7 @@
 
 Как да се свържете с нас?
 -------------------
-Можете да ни пишете по мейл (`Martin's email`_ ,`Vanessa's email`_, `Valentin's email`_) или във Facebook. Ще се радваме да отговорим на всеки ваш въпрос :) 
+Можете да ни пишете по мейл (`Martin's email`_ , `Vanessa's email`_, `Valentin's email`_) или във Facebook. Ще се радваме да отговорим на всеки ваш въпрос :) 
 
 .. _Martin Dimitrov: https://www.facebook.com/martin.dimitrov.714
 .. _Valentin Yonev: https://www.facebook.com/oklav
